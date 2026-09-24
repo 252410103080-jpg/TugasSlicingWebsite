@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111111;
+    color: #f5f1e8;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    padding: 0 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #111111;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+}
+
+.logo span {
+    color: #e63b2e;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-menu a:hover {
+    color: #e63b2e;
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+section {
+    padding: 100px 7%;
+}
+
+.small-text {
+    color: #f15a24;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.section-heading h2 {
+    font-size: 60px;
+    line-height: 1;
+}
+
+.section-heading h2 span {
+    color: #e63b2e;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: calc(100vh - 80px);
+
+    padding: 70px 7%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 50px;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 75px;
+    line-height: 0.95;
+
+    margin-bottom: 25px;
+}
+
+.hero-text h1 span {
+    color: #e63b2e;
+}
+
+.hero-description {
+    max-width: 450px;
+
+    color: #cccccc;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    background-color: #e63b2e;
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #f15a24;
+}
+
+.hero-image {
+    width: 50%;
+    height: 550px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background-color: #eee8dc;
+    color: #111111;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+}
+
+.about-text {
+    max-width: 550px;
+}
+
+.about-text p {
+    color: #333333;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+    background-color: #151515;
+}
+
+.seafood-container {
+    margin-top: 50px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.seafood-card {
+    min-height: 220px;
+
+    padding: 25px;
+
+    background-color: #f5f1e8;
+
+    color: #111111;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.seafood-card h3 {
+    font-size: 25px;
+}
+
+.seafood-price {
+    color: #e63b2e;
+
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+.available {
+    color: #198754;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+.sold-out {
+    color: #e63b2e;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+.seafood-card.unavailable {
+    opacity: 0.45;
+}
+
+
+/* =========================
+   BUILD YOUR BOIL
+========================= */
+
+.build-section {
+    margin-top: 100px;
+}
+
+.custom-container {
+    margin-top: 40px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 25px;
+}
+
+.custom-box,
+.summary-box {
+    padding: 30px;
+
+    background-color: #f5f1e8;
+
+    color: #111111;
+}
+
+.custom-box h3,
+.summary-box h3 {
+    margin-bottom: 25px;
+
+    font-size: 22px;
+}
+
+.custom-box label {
+    display: block;
+
+    margin-bottom: 18px;
+
+    cursor: pointer;
+}
+
+.custom-box input {
+    margin-right: 8px;
+}
+
+.summary-box {
+    display: flex;
+
+    flex-direction: column;
+}
+
+#selected-food {
+    color: #555555;
+
+    line-height: 1.8;
+
+    min-height: 100px;
+}
+
+.summary-box button {
+    border: none;
+
+    padding: 15px;
+
+    background-color: #e63b2e;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.summary-box button:hover {
+    background-color: #f15a24;
+}
+
+
+/* =========================
+   SOCIALS
+========================= */
+
+.socials {
+    text-align: center;
+}
+
+.social-container {
+    margin-top: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.social-container a {
+    padding: 15px 30px;
+
+    border: 1px solid white;
+
+    color: white;
+
+    text-decoration: none;
+}
+
+.social-container a:hover {
+    background-color: #e63b2e;
+
+    border-color: #e63b2e;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 40px 7%;
+
+    background-color: #080808;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+footer p {
+    color: #888888;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+
+        height: 450px;
+    }
+
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+
+    .seafood-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .custom-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .summary-box {
+        grid-column: 1 / 3;
+    }
+
+
+    .location-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .nav-menu {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .nav-menu a {
+        font-size: 12px;
+    }
+
+
+    section {
+        padding: 70px 20px;
+    }
+
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+
+    .hero-image {
+        height: 350px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 42px;
+    }
+
+
+    .seafood-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .custom-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .summary-box {
+        grid-column: auto;
+    }
+
+
+    footer {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}

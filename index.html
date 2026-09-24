@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangoon Boils</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">Rangoon<span>.</span></h2>
+
+            <div class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#socials">Socials</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <p class="small-text">SEAFOOD BOIL </p>
+
+            <h1>
+                YOUR SEAFOOD.
+                <span>YOUR CHOICE.</span>
+            </h1>
+
+            <p class="hero-description">
+                Fresh seafood, bold sauce, and a boil made
+                exactly the way you like it.
+            </p>
+
+            <a href="#menu" class="button">
+                EXPLORE MENU
+            </a>
+
+        </div>
+
+
+        <div class="hero-image">
+            <img src="images/download.jfif" alt="Seafood Boil">
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+
+        <div class="section-heading">
+
+            <p class="small-text">ABOUT US</p>
+
+            <h2>
+                IT'S YOUR
+                <span>BOIL.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="about-text">
+
+            <p>
+                Rangoon Boils is a seafood boil spot where
+                you can create your own seafood combination.
+            </p>
+
+            <p>
+                Pick your favorite seafood, choose your sauce,
+                add your favorite extras, and enjoy your own
+                seafood feast.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- MENU -->
+    <section id="menu" class="menu">
+
+        <div class="section-heading">
+
+            <p class="small-text">OUR MENU</p>
+
+            <h2>
+                TODAY'S
+                <span>CATCH.</span>
+            </h2>
+
+        </div>
+
+
+        <!-- Seafood akan dibuat dengan JavaScript -->
+        <div id="seafood-container" class="seafood-container"></div>
+
+
+        <!-- BUILD YOUR BOIL -->
+        <div class="build-section">
+
+            <div class="section-heading">
+
+                <p class="small-text">CUSTOMIZE IT</p>
+
+                <h2>
+                    BUILD YOUR
+                    <span>BOIL.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="custom-container">
+
+                <!-- SEAFOOD -->
+                <div class="custom-box">
+
+                    <h3>Choose Your Seafood</h3>
+
+                    <label>
+                        <input type="checkbox"
+                               class="food-option"
+                               value="Shrimp"
+                               data-price="25000">
+
+                        Shrimp
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               class="food-option"
+                               value="Crab"
+                               data-price="45000">
+
+                        Crab
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               class="food-option"
+                               value="Squid"
+                               data-price="20000">
+
+                        Squid
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               class="food-option"
+                               value="Mussel"
+                               data-price="30000">
+
+                        Mussel
+                    </label>
+
+                </div>
+
+
+                <!-- EXTRAS -->
+                <div class="custom-box">
+
+                    <h3>Extra</h3>
+
+                    <label>
+                        <input type="checkbox"
+                               class="food-option"
+                               value="Extra Potato"
+                               data-price="5000">
+
+                        Extra Potato
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               class="food-option"
+                               value="Extra Corn"
+                               data-price="5000">
+
+                        Extra Corn
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               class="food-option"
+                               value="Extra Sauce"
+                               data-price="8000">
+
+                        Extra Sauce
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               class="food-option"
+                               value="Extra Condiment"
+                               data-price="5000">
+
+                        Extra Condiment
+                    </label>
+
+                </div>
+
+
+                <!-- ORDER SUMMARY -->
+                <div class="summary-box">
+
+                    <h3>Your Boil</h3>
+
+                    <p id="selected-food">
+                        No item selected.
+                    </p>
+
+                    <h3>
+                        Total:
+                        Rp<span id="total-price">0</span>
+                    </h3>
+
+                    <button id="order-button">
+                        ORDER NOW
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOCIALS -->
+    <section id="socials" class="socials">
+
+        <div class="section-heading">
+
+            <p class="small-text">FOLLOW US</p>
+
+            <h2>
+                LET'S GET
+                <span>SOCIAL.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="social-container">
+
+            <a href="https://instagram.com/" target="_blank">
+                Instagram
+            </a>
+
+            <a href="https://tiktok.com/" target="_blank">
+                TikTok
+            </a>
+
+            <a href="https://wa.me/" target="_blank">
+                WhatsApp
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2 class="logo">
+            Rangoon<span>.</span>
+        </h2>
+
+        <p>
+            Seafood. Sauce. Your Way.
+        </p>
+
+        <p>
+            © 2026 Rangoon Boils
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
