@@ -38,14 +38,6 @@ Bagian Socials digunakan untuk menyediakan akses ke media sosial Rangoon Boils. 
 
 Website Rangoon Boils dibuat responsive agar dapat menyesuaikan tampilan dengan ukuran layar yang berbeda. Pada tampilan desktop, beberapa elemen ditampilkan dalam beberapa kolom, sedangkan pada ukuran tablet dan mobile layout akan menyesuaikan menggunakan CSS media query. Hal ini membuat website tetap dapat digunakan dengan nyaman pada perangkat desktop maupun mobile.
 
-## Teknologi yang Digunakan
-
-- HTML
-- CSS
-- JavaScript
-- Plain CSS
-- DOM
-
 ## Fitur Utama
 
 - Responsive design untuk desktop, tablet, dan mobile
